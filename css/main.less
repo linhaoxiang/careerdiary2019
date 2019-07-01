@@ -291,6 +291,8 @@ span{
 .s6{
     background-image: url(../img/wood_1.png);
     color: white;
+    background-repeat: initial;
+    margin-bottom: -100px;
     .owner{
         display: flex;
         flex-direction: row;
@@ -307,7 +309,59 @@ span{
         margin: 20px 10%; 
         border-color: grey;
     }
+    .parner{
+        padding: 3rem;
+        img{
+            width: 100%;
+            background-color: rgba(255, 255, 255, .9);
+            border: 2px solid  white;
+            border-radius: 10px;
+        }
+        text-align: center;
+        p{
+            text-align: center;
+        }
+    }
+    .parners{
+        padding-top: 20px;
+        border-radius: 10px;
+        background-image: url(../img/lined_paper.png);
+        color: #222222;
+        text-align: center;
+        .parner_sm{
+            padding: 2rem;
+            p{
+                text-align: center;
+                
+            }
+        }
+        img{
+            width: 90%;
+            background: none;
+            border: none;
+        }
+    }
+    .parner_peoples{
+        #s6-parner-2{
+            margin: 30px auto;
+        }
+        .parner_pp{
+            img{
+                border-radius: 5px;
+            }
+            .parner_title{
+                font-size: .8rem;
+                color: #aaa;
+            }
+            p{
+                text-align: center;
+                color: white;
+            }
+        }
+
+    }
 }
+
 @media only screen and (max-width: 1200px) {
 
     h1{ font-size: 1.6rem; }
@@ -451,7 +505,19 @@ span{
         }
     }
     .s6{
-        padding: .5rem;
+        padding: 1rem;
+        .marketings{
+            padding: .5rem;
+        }
+        .parner{
+            padding: .5rem;
+        }
+        .parners{
+            padding: .5rem;
+            .parner_sm{ 
+                padding: 1rem;
+            }
+        }
         .owner .brand{
             padding: .5rem;
         }
